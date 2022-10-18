@@ -1,3 +1,35 @@
 body {
   margin: 0;
+  font-family: "Roboto", cursive;
 }
+
+/* Header */
+
+.header {
+  display: flex;
+  column-gap: 8rem;
+  align-items: center;
+  padding-inline: 2rem;
+  box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.58);
+}
+
+.debug {
+  border: 3px solid brown;
+}
+
+.searchContainer label {
+  margin-inline-end: 24px;
+}
+
+.header input {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  min-width: 300px;
+  border: none;
+  outline: none;
+  border: 1px solid;
+}
+
+/* Header end */
