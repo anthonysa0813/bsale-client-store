@@ -15,10 +15,14 @@
     <div id="app">
       <header class="header">
         <h1>Bsale Store</h1>
-        <div class="searchContainer">
+        <form class="searchContainer" id="form">
           <label>Busca un Producto:</label>
-          <input type="text" placeholder="Por ejempl...'Pisco'" />
-        </div>
+          <input
+            type="text"
+            placeholder="Por ejempl...'Pisco'"
+            id="searchValue"
+          />
+        </form>
       </header>
       <div class="mainGrid">
         <aside>
@@ -36,11 +40,13 @@
           </nav>
         </aside>
         <main>
-          <h1>welcome to my store :D</h1>
+          <h2>Lista de todos los productos...</h2>
+          <div class="section" id="mainProducts"></div>
         </main>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
     <script type="module" src="/src/components/Aside.js"></script>
+    <script type="module" src="/src/components/Products.js"></script>
   </body>
 </html>
