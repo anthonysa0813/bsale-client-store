@@ -1,3 +1,9 @@
+:root {
+  --white-light: #f9f9f9;
+  --color-gray: #8e8ea1;
+  --color-dark: #22242c;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", cursive;
@@ -10,9 +16,7 @@ body {
   column-gap: 8rem;
   align-items: center;
   padding-inline: 2rem;
-  box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.58);
-  -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.58);
+  border-bottom: 1px solid #eee;
 }
 
 .debug {
@@ -33,3 +37,41 @@ body {
 }
 
 /* Header end */
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+/* Aside */
+aside {
+  padding: 5rem;
+}
+nav h2 {
+  margin-block-end: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+nav ul li {
+  color: var(--color-gray);
+}
+
+nav ul li:hover {
+  color: var(--color-dark);
+}
+
+/* Aside end */
+
+/* Main */
+main {
+  background-color: var(--white-light);
+  min-height: calc(100vh - 80px);
+}
+/* Main end */
